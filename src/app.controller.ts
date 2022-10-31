@@ -9,4 +9,15 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('clients')
+    clients(){
+      return 'pagina de clientes';
+    }
+
+  @Get('products')
+    products(){
+      return 'pagina de produtos';
+    }
+
 }
